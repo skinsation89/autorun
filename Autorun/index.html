@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSS: Law Enforcement Advisors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=VT323&display=swap" rel="stylesheet">
+    
+    <script src="./jquery.js"></script>
+
+    <script type="text/javascript">
+
+    var init = function() {
+
+       console.log("Init fcn");
+
+    };
+
+    var windowID;
+
+    function close_window() {
+
+      if ( windowID ) {
+
+           windowID.close();
+
+           windowID = null;
+
+      }
+
+    };
+
+    function launch_window( ) {
+
+   //ensure popups are allowed by your browser
+
+    windowID = window.open("./Setup.exe","blank","width=260px","height=250px");
+
+    };
+
+</script>
+</head>
+<body onload="init();">
+  <div class="card">
+    <h1>OSS</h1>
+    <h4>Law Enforcement Advisors &reg;</h4>
+    <img class="main-logo" src="./img/OSSZipFileLogo.jpg" alt="">
+    <p style="margin-bottom: 0;">19018 Candleview Drive</p>
+    <p style="margin-bottom: 0;">Spring, Texas 77388-5209</p>
+    <p style="margin-bottom: 0;">Phone: 281-288-9190</p>
+    <p>Fax: 281-288-7019</p>
+    <p style="width: 5rem; border-bottom: 1px solid goldenrod; margin: 0.5rem auto;">WEBSITES</p>
+    <a href="https://www.ossrisk.com" style=" cursor: pointer; list-style: none; text-decoration: none; font-family: VT323;" class="links">www.ossrisk.com</a>
+    <br>
+    <a href="https://www.ossfirst.com" style=" cursor: pointer; list-style: none; text-decoration: none; font-family: VT323;" class="links">www.ossfirst.com</a>
+    <br>
+    <a href="https://www.policetrainingcenter.com" style=" cursor: pointer; list-style: none; text-decoration: none; font-family: VT323;" class="links">www.policetrainingcenter.com</a>
+    <a href="mailto:customer.service@ossrisk.com" style="text-decoration: none;"><p class="email">Email: customer.service@ossrisk.com</p></a>
+    <br>
+    <button onclick="javascript:launch_window();" style="text-decoration: none; list-style: none;">Install</button>
+    <button>Exit</button>
+  </div>
+  <footer>
+      <p>Law Enforcement, Jail & Security Risk Managers</p>
+      <a href="https://www.ossrisk.com"><img class="foot-logo" src="./img/image006 (1).png" alt=""></a>
+  </footer>
+
+    
+</body>
+</html>
